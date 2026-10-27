@@ -1,0 +1,4 @@
+[    0.0s | play    0.0s] AutoPilot scenario=welcome screen=390x844 dpi=92 safe=(x:0.00, y:0.00, width:390.00, height:844.00) device=Mac16,10 gpu=Apple M4 os=Mac OS X 27.0.0
+[    1.3s | play    1.2s] screenshot 390x844_01_welcome.png
+[    1.3s | play    1.2s] PERF frames=43 avgFPS=60.0 p95 frame=16.7ms p99=16.7ms worst=16.7ms (targetFrameRate=60, Mac16,10, Apple M4)
+[    1.3s | play    1.2s] STATS play=1s sold=0 coins=0 earned=0 level=1 firstSale=-1.0s firstUpgrade=-1.0s oven2=-1.0s recipes=1 missingSprites=0 saves=0

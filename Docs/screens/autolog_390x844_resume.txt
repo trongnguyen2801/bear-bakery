@@ -1,0 +1,8 @@
+[    0.0s | play   55.7s] AutoPilot scenario=resume screen=390x844 dpi=92 safe=(x:0.00, y:0.00, width:390.00, height:844.00) device=Mac16,10 gpu=Apple M4 os=Mac OS X 27.0.0
+[    0.0s | play   55.7s] LOADED coins=56 sold=6 lastSimAgo=1241s pendingOffline=OFF33 coins=78 soldOff=3 baked=1
+[    0.0s | play   55.7s] OVENS #0 owned=True state=2 recipe=3 rem=0.0 job=30 | #1 owned=False state=0 recipe=0 rem=0.0 job=0 | #2 owned=False state=0 recipe=0 rem=0.0 job=0
+[    0.0s | play   55.7s] SHELVES #0 3x0 | #1 0x0 | #2 0x0 | #3 0x0 | #4 0x0 | #5 0x0 inv=0,0,0,0,0,0
+[    1.1s | play   56.7s] screenshot 390x844_01_resume_offline_popup.png
+[    1.1s | play   56.7s] SELFTEST offline claim once: PASS (+78, second +0)
+[    1.6s | play   57.3s] PERF frames=60 avgFPS=58.1 p95 frame=16.7ms p99=49.5ms worst=49.5ms (targetFrameRate=60, Mac16,10, Apple M4)
+[    1.6s | play   57.3s] STATS play=57s sold=6 coins=134 earned=234 level=1 firstSale=37.4s firstUpgrade=38.0s oven2=-1.0s recipes=1,2,3 missingSprites=0 saves=1

@@ -1,0 +1,60 @@
+[    0.0s | play    0.0s] AutoPilot scenario=play screen=390x844 dpi=92 safe=(x:0.00, y:0.00, width:390.00, height:844.00) device=Mac16,10 gpu=Apple M4 os=Mac OS X 27.0.0
+[    2.4s | play    2.3s] screenshot 390x844_01_t001s.png
+[    5.3s | play    5.2s] quest done t1_dough
+[    8.3s | play    8.2s] recipe unlocked 2
+[    8.3s | play    8.2s] quest done t2_merge
+[    8.3s | play    8.2s] quest done t3_bake
+[   11.9s | play   11.9s] quest done t4_collect
+[   13.2s | play   13.1s] quest done t5_stock
+[   15.7s | play   15.6s] recipe unlocked 3
+[   26.3s | play   26.2s] sale #1 +5
+[   26.3s | play   26.2s] quest done t6_sell
+[   29.6s | play   29.6s] sale #2 +5
+[   37.0s | play   36.9s] sale #3 +5
+[   45.6s | play   45.6s] recipe unlocked 4
+[   51.1s | play   51.0s] UpgradeBought chef kind=0 idx=2 cost=80
+[   51.1s | play   51.0s] quest done t7_buy
+[   51.8s | play   51.7s] quest done t8_break
+[   53.4s | play   53.4s] ExpansionBought  kind=0 idx=4 cost=70
+[   61.9s | play   61.8s] screenshot 390x844_02_t060s.png
+[   71.5s | play   71.4s] ExpansionBought  kind=2 idx=2 cost=110
+[   76.6s | play   76.5s] shop level 2
+[   87.3s | play   87.2s] UpgradeBought capacity kind=2 idx=2 cost=70
+[   97.9s | play   97.8s] ExpansionBought  kind=0 idx=5 cost=80
+[  107.2s | play  107.1s] UpgradeBought oven kind=1 idx=2 cost=90
+[  116.7s | play  116.6s] shop level 3
+[  116.7s | play  116.6s] quest done p1_sell15
+[  121.8s | play  121.7s] screenshot 390x844_03_t120s.png
+[  171.9s | play  171.8s] ExpansionBought  kind=1 idx=1 cost=650
+[  171.9s | play  171.8s] quest done p2_oven2
+[  171.9s | play  171.8s] quest done p3_recipe4
+[  181.8s | play  181.7s] screenshot 390x844_04_t180s.png
+[  185.2s | play  185.2s] ExpansionBought  kind=0 idx=6 cost=100
+[  221.8s | play  221.8s] shop level 4
+[  242.1s | play  242.0s] screenshot 390x844_05_t240s.png
+[  243.6s | play  243.6s] ExpansionBought  kind=0 idx=7 cost=130
+[  268.3s | play  268.3s] UpgradeBought chef kind=0 idx=3 cost=160
+[  302.6s | play  302.5s] screenshot 390x844_06_t301s.png
+[  312.9s | play  312.8s] FurnitureBought sofa kind=0 idx=1 cost=160
+[  312.9s | play  312.9s] quest done p4_furn
+[  312.9s | play  312.9s] quest done p5_hearts
+[  313.7s | play  313.6s] UpgradeBought capacity kind=2 idx=3 cost=190
+[  350.4s | play  350.4s] recipe unlocked 5
+[  350.7s | play  350.6s] ExpansionBought  kind=0 idx=8 cost=170
+[  362.3s | play  362.2s] screenshot 390x844_07_t361s.png
+[  385.0s | play  385.0s] recipe unlocked 6
+[  385.0s | play  385.0s] quest done p6_recipe6
+[  386.4s | play  386.3s] ExpansionBought  kind=2 idx=3 cost=280
+[  392.2s | play  392.2s] FurnitureBought rug kind=0 idx=1 cost=180
+[  421.9s | play  421.8s] screenshot 390x844_08_t420s.png
+[  441.9s | play  441.8s] FurnitureBought lamp kind=0 idx=1 cost=200
+[  477.5s | play  477.4s] UpgradeBought oven kind=1 idx=3 cost=240
+[  482.3s | play  482.2s] screenshot 390x844_09_t481s.png
+[  482.8s | play  482.8s] ExpansionBought  kind=0 idx=9 cost=220
+[  495.3s | play  495.2s] shop level 5
+[  495.6s | play  495.5s] FurnitureBought coffee kind=0 idx=1 cost=260
+[  508.8s | play  508.8s] ExpansionBought  kind=0 idx=10 cost=280
+[  542.4s | play  542.3s] screenshot 390x844_10_t541s.png
+[  601.8s | play  601.7s] screenshot 390x844_11_t600s.png
+[  602.1s | play  602.0s] PERF frames=35816 avgFPS=59.5 p95 frame=17.5ms p99=17.6ms worst=49.9ms (targetFrameRate=60, Mac16,10, Apple M4)
+[  602.1s | play  602.0s] STATS play=602s sold=98 coins=283 earned=4503 level=5 firstSale=26.2s firstUpgrade=51.0s oven2=171.8s recipes=1,2,3,4,5,6 missingSprites=0 saves=394

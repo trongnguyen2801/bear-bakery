@@ -1,0 +1,23 @@
+[    0.0s | play    0.0s] AutoPilot scenario=play screen=390x844 dpi=92 safe=(x:0.00, y:0.00, width:390.00, height:844.00) device=Mac16,10 gpu=Apple M4 os=Mac OS X 27.0.0
+[    2.4s | play    2.3s] screenshot 390x844_01_t001s.png
+[    5.3s | play    5.2s] quest done t1_dough
+[    8.3s | play    8.2s] recipe unlocked 2
+[    8.3s | play    8.3s] quest done t2_merge
+[    8.3s | play    8.3s] quest done t3_bake
+[   12.0s | play   12.0s] quest done t4_collect
+[   13.3s | play   13.2s] quest done t5_stock
+[   15.8s | play   15.7s] recipe unlocked 3
+[   26.4s | play   26.3s] sale #1 +5
+[   26.4s | play   26.3s] quest done t6_sell
+[   29.7s | play   29.7s] sale #2 +5
+[   37.1s | play   37.1s] sale #3 +5
+[   45.7s | play   45.6s] recipe unlocked 4
+[   50.1s | play   50.0s] UpgradeBought chef kind=0 idx=2 cost=80
+[   50.1s | play   50.0s] quest done t7_buy
+[   50.8s | play   50.7s] quest done t8_break
+[   54.0s | play   53.9s] ExpansionBought  kind=0 idx=4 cost=70
+[   61.8s | play   61.7s] screenshot 390x844_02_t060s.png
+[   70.1s | play   70.1s] UpgradeBought capacity kind=2 idx=2 cost=70
+[   76.7s | play   76.6s] shop level 2
+[   81.8s | play   81.7s] PERF frames=4753 avgFPS=58.5 p95 frame=17.0ms p99=32.8ms worst=49.9ms (targetFrameRate=60, Mac16,10, Apple M4)
+[   81.8s | play   81.7s] STATS play=82s sold=9 coins=71 earned=291 level=2 firstSale=26.3s firstUpgrade=50.0s oven2=-1.0s recipes=1,2,3,4 missingSprites=0 saves=48

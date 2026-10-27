@@ -1,0 +1,3 @@
+Sprites in manifest: 236
+Loaded via Resources.Load<Sprite>: 236
+Missing: 0

@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "recipes": [
+    { "level": 1, "id": "DinnerRolls",      "nameVi": "Bánh mì tròn",   "bakeSeconds": 8,  "pieces": 3, "price": 5 },
+    { "level": 2, "id": "Bagle",            "nameVi": "Bánh vòng bagel", "bakeSeconds": 11, "pieces": 3, "price": 12 },
+    { "level": 3, "id": "Croissant",        "nameVi": "Bánh sừng bò",   "bakeSeconds": 14, "pieces": 3, "price": 26 },
+    { "level": 4, "id": "Pretzel",          "nameVi": "Bánh xoắn",      "bakeSeconds": 17, "pieces": 3, "price": 55 },
+    { "level": 5, "id": "Muffin",           "nameVi": "Muffin sô-cô-la", "bakeSeconds": 21, "pieces": 3, "price": 115 },
+    { "level": 6, "id": "StrawberryJamPie", "nameVi": "Bánh mứt dâu",   "bakeSeconds": 25, "pieces": 3, "price": 240 }
+  ],
+  "customers": [
+    { "id": "Cat",     "nameVi": "Mèo Phô Mai",     "descVi": "Mê bánh giòn, hay ghé buổi sáng.",       "likes": [2, 4, 6], "unlockLevel": 1 },
+    { "id": "Giraffe", "nameVi": "Hươu Giffie",     "descVi": "Cao ráo, thích bánh mềm nhẹ.",            "likes": [1, 3, 5], "unlockLevel": 1 },
+    { "id": "Pig",     "nameVi": "Heo Piggy",       "descVi": "Ăn khỏe, đặc biệt mê bánh bơ.",           "likes": [3, 6, 2], "unlockLevel": 1 },
+    { "id": "Rabbit",  "nameVi": "Thỏ Bunnie",      "descVi": "Thích đồ ngọt và quầy bánh xinh.",        "likes": [5, 2, 1], "unlockLevel": 2 },
+    { "id": "Penguin", "nameVi": "Cánh cụt Penny",  "descVi": "Lạch bạch tới mỗi khi có bánh xoắn.",     "likes": [4, 1, 6], "unlockLevel": 3 },
+    { "id": "Lion",    "nameVi": "Sư tử Symba",     "descVi": "Khách sộp, chỉ chịu bánh cao cấp.",       "likes": [6, 5, 3], "unlockLevel": 4 }
+  ],
+  "chef": {
+    "intervalByLevel": [5.0, 4.4, 3.9, 3.4, 3.0],
+    "bonusChanceByLevel": [0.0, 0.0, 0.10, 0.15, 0.20],
+    "helpFraction": 0.18,
+    "helpMaxPerCycle": 3,
+    "manualTapsPerDough": 6
+  },
+  "cashier": { "checkoutSeconds": 1.8, "helpFraction": 0.3, "helpMaxPerCheckout": 2, "manualTapFraction": 0.34 },
+  "promoter": { "spawnMultiplier": 0.85, "shoutCooldown": 20 },
+  "energy": {
+    "chefPerDough": 1.3,
+    "cashierPerCheckout": 2.2,
+    "promoterPerSecond": 0.22,
+    "tiredThreshold": 30,
+    "tiredSpeedMult": 0.7,
+    "restThreshold": 15,
+    "restDoneAt": 95,
+    "transitSeconds": 1.4,
+    "inPlaceRecovery": 1.5,
+    "maxRecovery": 20,
+    "maxDrainReduction": 0.35
+  },
+  "upgrades": [
+    { "id": "chef", "nameVi": "Đầu bếp Gấu", "descVi": "Nhồi bột nhanh hơn; từ cấp 3 có lúc ra bột cấp 2.", "maxLevel": 5,
+      "costs": [80, 160, 400, 950], "values": [1, 2, 3, 4, 5], "values2": [] },
+    { "id": "oven", "nameVi": "Lò nướng", "descVi": "Rút ngắn thời gian nướng mọi lò.", "maxLevel": 5,
+      "costs": [90, 240, 620, 1500], "values": [1.0, 0.88, 0.78, 0.70, 0.62], "values2": [] },
+    { "id": "capacity", "nameVi": "Sức chứa trưng bày", "descVi": "Kệ chứa nhiều bánh hơn, kho rộng hơn.", "maxLevel": 5,
+      "costs": [70, 190, 460, 1100], "values": [6, 9, 12, 15, 18], "values2": [12, 18, 24, 30, 40] }
+  ],
+  "board":   { "start": 4, "max": 12, "costs": [70, 80, 100, 130, 170, 220, 280, 360], "levelReq": [1, 1, 1, 2, 2, 3, 3, 4] },
+  "ovens":   { "start": 1, "max": 3,  "costs": [650, 2600], "levelReq": [2, 4] },
+  "shelves": { "start": 2, "max": 5,  "costs": [110, 280, 650], "levelReq": [1, 2, 3] },
+  "furniture": [
+    { "id": "beanbag", "nameVi": "Ghế lười",        "descVi": "Chỗ nghỉ. Hồi năng lượng mỗi giây.",            "effect": "rest",      "values": [5, 6.5, 8],        "costs": [0, 120, 300],   "levelReq": 1, "restSpot": true,  "startOwned": true },
+    { "id": "sofa",    "nameVi": "Ghế sofa",        "descVi": "Chỗ nghỉ êm hơn, hồi nhanh hơn.",               "effect": "rest",      "values": [7, 9, 11],         "costs": [160, 260, 520], "levelReq": 1, "restSpot": true,  "startOwned": false },
+    { "id": "bed",     "nameVi": "Giường êm",       "descVi": "Chỗ nghỉ tốt nhất cho nhân viên.",              "effect": "rest",      "values": [10, 13, 16],       "costs": [700, 900, 1500],"levelReq": 3, "restSpot": true,  "startOwned": false },
+    { "id": "coffee",  "nameVi": "Máy pha cà phê",  "descVi": "Nhân viên mất năng lượng chậm hơn.",            "effect": "drain",     "values": [0.15, 0.25, 0.35], "costs": [260, 420, 800], "levelReq": 2, "restSpot": false, "startOwned": false },
+    { "id": "lamp",    "nameVi": "Đèn đứng",        "descVi": "Ánh đèn dịu giúp nghỉ ngon: tăng tốc hồi phục.", "effect": "restBoost", "values": [0.10, 0.20, 0.30], "costs": [200, 350, 600], "levelReq": 1, "restSpot": false, "startOwned": false },
+    { "id": "rug",     "nameVi": "Thảm cỏ",         "descVi": "Nhân viên vui vẻ: khách quen cho thêm tip.",    "effect": "tips",      "values": [0.10, 0.20, 0.30], "costs": [180, 300, 550], "levelReq": 2, "restSpot": false, "startOwned": false }
+  ],
+  "quests": [
+    { "id": "t1_dough",   "type": "dough",       "target": 2, "reward": 5,   "tutorial": true,  "textVi": "Có 2 cục bột trên bàn",      "hintVi": "Gấu đang nhồi bột. Bấm nút Tăng tốc ở giữa thanh dưới để Gấu làm nhanh gấp đôi!" },
+    { "id": "t2_merge",   "type": "merge",       "target": 1, "reward": 5,   "tutorial": true,  "textVi": "Ghép 1 cặp bột",             "hintVi": "Kéo một cục bột thả lên cục giống nó để ghép thành bột mới." },
+    { "id": "t3_bake",    "type": "bake",        "target": 1, "reward": 5,   "tutorial": true,  "textVi": "Đưa bột vào lò",             "hintVi": "Kéo bột thả vào lò để nướng." },
+    { "id": "t4_collect", "type": "collect",     "target": 1, "reward": 10,  "tutorial": true,  "textVi": "Lấy bánh ra khỏi lò",        "hintVi": "Bánh chín rồi! Chạm vào lò để lấy bánh vào kho." },
+    { "id": "t5_stock",   "type": "stock",       "target": 1, "reward": 10,  "tutorial": true,  "textVi": "Bày bánh lên kệ",            "hintVi": "Bấm mũi tên phải sang Tiệm, chạm kệ trống để bày bánh từ kho." },
+    { "id": "t6_sell",    "type": "sell",        "target": 1, "reward": 15,  "tutorial": true,  "textVi": "Bán chiếc bánh đầu tiên",    "hintVi": "Khách sẽ chọn bánh, mang ra quầy và thanh toán." },
+    { "id": "t7_buy",     "type": "buy",         "target": 1, "reward": 30,  "tutorial": true,  "textVi": "Mua 1 nâng cấp",             "hintVi": "Bấm nút Nâng cấp ở góc trái thanh dưới để mua nâng cấp." },
+    { "id": "t8_break",   "type": "visit_break", "target": 1, "reward": 40,  "tutorial": true,  "textVi": "Ghé phòng nghỉ nhân viên",   "hintVi": "Nhân viên cần nghỉ ngơi. Bấm Nội thất để xem phòng nghỉ." },
+    { "id": "p1_sell15",  "type": "sell",        "target": 15, "reward": 40, "tutorial": false, "textVi": "Bán tổng cộng 15 bánh",      "hintVi": "Giữ kệ luôn có bánh để khách ghé đều." },
+    { "id": "p1b_deliver","type": "deliver",     "target": 1, "reward": 50,  "tutorial": false, "textVi": "Giao 1 đơn hàng",            "hintVi": "Chạm chú chó cạnh quầy để đóng gói đơn bằng bánh trong kho." },
+    { "id": "p2_oven2",   "type": "ovens",       "target": 2, "reward": 60,  "tutorial": false, "textVi": "Mở lò nướng thứ hai",        "hintVi": "Chạm chỗ lò còn trống trong bếp để lắp lò mới." },
+    { "id": "p3_recipe4", "type": "recipe",      "target": 4, "reward": 80,  "tutorial": false, "textVi": "Mở khóa Bánh xoắn (cấp 4)", "hintVi": "Ghép bột cấp 3 với nhau." },
+    { "id": "p4_furn",    "type": "furniture",   "target": 1, "reward": 80,  "tutorial": false, "textVi": "Mua 1 món nội thất",         "hintVi": "Mở Nội thất để mua đồ cho phòng nghỉ." },
+    { "id": "p5_hearts",  "type": "hearts",      "target": 2, "reward": 120, "tutorial": false, "textVi": "Một khách quen đạt 2 tim",   "hintVi": "Bày món khách thích (xem Sổ tay > Khách)." },
+    { "id": "p6_recipe6", "type": "recipe",      "target": 6, "reward": 300, "tutorial": false, "textVi": "Mở khóa Bánh mứt dâu (cấp 6)", "hintVi": "Món cao cấp nhất trong chuỗi ghép." }
+  ],
+  "flow": {
+    "spawnMin": 5, "spawnMax": 9, "maxCustomers": 6, "sadTrickleSeconds": 25, "pickSeconds": 1.0, "walkSpeed": 1.9,
+    "tipBase": 0.15, "tipPerHeart": 0.10, "tipCap": 0.5, "affectionBuy": 1, "affectionFav": 3,
+    "heartThresholds": [5, 15, 30], "firstSpawnDelay": 2.5
+  },
+  "economy": { "startCoins": 0, "autoRestockCost": 120, "autoRestockAfterQuest": "t6_sell", "autosaveSeconds": 10 },
+  "offline": { "maxSeconds": 7200, "saleInterval": 12, "energyRecoveryPerSecond": 0.5, "minSecondsForReport": 30, "resumeGapSeconds": 3 },
+  "burn": { "burnEnabled": false, "burnGraceSeconds": 45, "warnSeconds": 15 },
+  "tutorial": { "handIdleSeconds": 5 },
+  "boost": { "duration": 30, "cooldown": 45, "multiplier": 2 },
+  "marketing": { "awayMult": 0.6, "trashChance": 0.3, "trashPenalty": 0.06, "trashPenaltyCap": 0.36, "cleanReward": 1,
+                 "cleanerQuestTarget": 5, "cleanerQuestReward": 30, "cleanerWalkSeconds": 2.2, "cleanerSweepSeconds": 1.6 },
+  "delivery": { "unlockAfterQuest": "p1_sell15", "orderInterval": 35, "travelSeconds": 20, "skipSeconds": 12, "firstDelay": 3,
+                "qtyMin": 3, "qtyMax": 6, "rewardMult": 1.5, "rewardBonus": 10 },
+  "levelXp": [0, 150, 500, 1200, 2500, 5000, 9000, 15000]
+}

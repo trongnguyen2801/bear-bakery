@@ -1,0 +1,47 @@
+[    0.0s | play    0.0s] AutoPilot scenario=shots screen=390x844 dpi=92 safe=(x:0.00, y:0.00, width:390.00, height:844.00) device=Mac16,10 gpu=Apple M4 os=Mac OS X 27.0.0
+[    0.6s | play    0.5s] screenshot 390x844_01_start_shop.png
+[    2.2s | play    2.1s] screenshot 390x844_02_kitchen_start.png
+[    8.4s | play    8.4s] screenshot 390x844_03_tutorial_hand_idle.png
+[    8.6s | play    8.5s] screenshot 390x844_04_arrow_sliding.png
+[    9.0s | play    8.9s] screenshot 390x844_05_arrow_to_shop.png
+[   10.1s | play   10.0s] quest done t1_dough
+[   10.2s | play   10.1s] screenshot 390x844_06_arrow_to_breakroom.png
+[   10.2s | play   10.1s] SELFTEST side arrows: PASS (zones 1->2->1->0, left arrow hidden at first zone=True)
+[   10.9s | play   10.9s] SELFTEST vertical swipe does not scroll: PASS
+[   12.0s | play   11.9s] screenshot 390x844_07_drag_merge.png
+[   12.2s | play   12.2s] recipe unlocked 2
+[   12.3s | play   12.2s] quest done t2_merge
+[   12.4s | play   12.3s] SELFTEST drag-merge at 390x844: PASS (slot 0->1, level 1->2)
+[   12.4s | play   12.3s] screenshot 390x844_08_after_merge.png
+[   13.2s | play   13.1s] SELFTEST drop-outside returns item: PASS
+[   13.6s | play   13.5s] screenshot 390x844_09_drag_to_oven.png
+[   13.8s | play   13.7s] quest done t3_bake
+[   13.8s | play   13.7s] SELFTEST drag-to-oven: PASS
+[   16.9s | play   16.8s] SELFTEST sim continues with sheet open + other zone: PASS (oven 10.4s -> 7.9s, dough 2->3)
+[   17.7s | play   17.6s] screenshot 390x844_10_oven_baking.png
+[   25.1s | play   25.1s] quest done t4_collect
+[   26.6s | play   26.5s] quest done t5_stock
+[   28.5s | play   28.4s] recipe unlocked 3
+[   39.7s | play   39.6s] sale #1 +12
+[   39.7s | play   39.6s] quest done t6_sell
+[   42.6s | play   42.5s] sale #2 +12
+[   42.9s | play   42.9s] screenshot 390x844_11_kitchen_progress.png
+[   44.7s | play   44.6s] screenshot 390x844_12_shop_customers.png
+[   48.4s | play   48.4s] ExpansionBought  kind=0 idx=4 cost=70
+[   48.4s | play   48.4s] quest done t7_buy
+[   48.4s | play   48.4s] quest done t8_break
+[   48.6s | play   48.6s] sale #3 +12
+[   49.5s | play   49.5s] UpgradeBought chef kind=0 idx=2 cost=80
+[   50.6s | play   50.6s] screenshot 390x844_13_shop_busy.png
+[   51.1s | play   51.1s] screenshot 390x844_14_sheet_kitchen.png
+[   51.6s | play   51.6s] screenshot 390x844_15_sheet_shelfpick.png
+[   52.1s | play   52.1s] screenshot 390x844_16_notebook_recipes.png
+[   52.6s | play   52.6s] screenshot 390x844_17_notebook_guests.png
+[   53.8s | play   53.7s] screenshot 390x844_18_breakroom.png
+[   54.3s | play   54.2s] screenshot 390x844_19_sheet_furniture.png
+[   54.7s | play   54.6s] screenshot 390x844_20_staff_to_rest.png
+[   56.3s | play   56.2s] screenshot 390x844_21_staff_resting.png
+[   57.0s | play   56.9s] screenshot 390x844_22_kitchen_chef_away.png
+[   58.0s | play   57.9s] screenshot 390x844_23_kitchen_end.png
+[   58.0s | play   57.9s] PERF frames=3397 avgFPS=59.2 p95 frame=17.4ms p99=19.0ms worst=49.9ms (targetFrameRate=60, Mac16,10, Apple M4)
+[   58.0s | play   57.9s] STATS play=58s sold=3 coins=6 earned=156 level=1 firstSale=39.6s firstUpgrade=48.4s oven2=-1.0s recipes=1,2,3 missingSprites=0 saves=24
